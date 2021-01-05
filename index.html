@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sanchita'sWeb</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <meta name="viewport" content="width-device-width initial-scale=1.0"> -->
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="firstRow clearfix">
+				<ul class="navigation" id="phone">
+					<li><a href="#">PYTHON</a></li>
+					<li><a href="#">JAVA</a></li>
+					<li><a href="#">C</a></li>
+					<li><a href="#">HTML,CSS,JS</a></li>
+				</ul>
+				<a href="#" class="forPhone" id="phn" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+		<div class="content">
+			<h1>
+			HELLO!! I AM <span id="name">SANCHITA</span><br>
+			..A front end web developer
+			</h1>
+			<a href="#" class="btn btn1">ABOUT ME</a>
+			<a href="#" class="btn btn2">RESUME</a>
+		</div>
+	</header>
+
+</body>
+<script type="text/javascript">
+	function slideshow(){
+		var x=document.getElementById('phone');
+		if(x.style.display==='none'){
+			x.style.display='block';
+		}
+		else{
+			x.style.display='none';
+		}
+	}
+</script>
+</html>

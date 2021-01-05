@@ -1,0 +1,125 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 30px;
+	overflow-x: hidden;
+	color:white;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('sanchita.jpeg');
+	background-color: black;
+	background-size: cover;/*covers the whole screen*/
+	background-position: center;
+	background-repeat: no-repeat;/*such that the image does not repeat*/
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: '.';
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.firstRow{
+	max-width: 2000px;
+	margin:0 auto;
+}
+.navigation{
+	float: right;
+	margin-top: 60px;
+}
+.navigation li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 45px;
+}
+.navigation li a{
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+}
+.navigation li a:hover{
+	border-bottom: 3px solid purple;
+}
+
+.content{
+	width: 2000px;
+	position: absolute;
+	top: 55%;
+	left: 15%;
+}
+h1{
+	color:white;
+	font-size: 200%;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-weight: lighter;
+	border-radius: 200px;
+	transition: border 0.2s,background-color 0.2s,color 0.2s;
+}
+.btn1,.btn2{
+	border: 1px solid purple;
+	color: purple;
+	margin-right: 15px;
+	background-color: transparent;
+}
+.btn1:hover,.btn2:hover{
+	background-color: white;
+	color: purple;
+}
+#name{
+	animation: sanchita 0.5s infinite;
+}
+@keyframes sanchita{
+	0%{color: purple;}
+	35%{color:white;}
+	75%{color: red;}
+	100%{color: purple;}
+}
+
+/*responsive query*/
+.forPhone{
+	display: none;
+}
+
+@media only screen and (max-width: 2000px){
+	.content{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+	h1{
+		font-size: 160%;
+	}
+}
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 120%;
+	}
+	.navigation{display: none;}
+	.navigation{float: left;}
+	.navigation li{display: block;margin-top: 15px;}
+	.forPhone{display: inline-block;color: white;float: right;margin-right: 30px;margin-top: 20px;}
+}
+@media only screen and (max-width: 480px){
+	h1{
+		font-size: 120%;
+	}
+	.btn1{
+		margin-bottom: 10px;
+	}
+}
+
